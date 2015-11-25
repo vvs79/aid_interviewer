@@ -1,0 +1,24 @@
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Aid Interviewer</title>
+  </head>
+  <body>
+<h1>Aid Interviewer</h1>
+</br></br>
+<form accept-charset="UTF-8" action="/clients" method="post">
+  <label> name : <input type="text" name="client[name]" value="" /></label> </br> </br>
+  <label> email :    <input type="text" name="client[email]" value="" /> </label> </br> </br>
+  <label> password : <input type="password" name="client[password]" value="" size='16px' /></label> </br> </br>
+  <div ><input  class="btn btn-lg btn-primary" type="submit" value='Sign up now!' /></div>
+</form>
+</br></br></br>
+
+  <!--%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %-->
+
+
+<%= link_to image_tag("Interview_skills_logo.png", alt: "Aid Interviewer"), '#' %>
+
+  </body>
+</html>
