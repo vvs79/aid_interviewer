@@ -15,4 +15,18 @@
  */
 
  @import "bootstrap-sprockets";
-@import "bootstrap";
+ @import "bootstrap";
+
+/* universal */
+
+body {  padding-top: 45px;}
+
+section {  overflow: auto;}
+
+textarea {  resize: vertical;}
+
+.center {  text-align: center;}
+
+.center h1 {  margin-bottom: 10px; }
+
+h1 {  font-size:80px; color:blue; font-weight:bolder; font-family:Verdana, "Times New Roman"; }
