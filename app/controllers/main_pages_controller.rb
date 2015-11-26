@@ -17,7 +17,9 @@ skip_before_action :verify_authenticity_token
 	  @client = params[:client]
 	  # params[:id] = @client[:name]
 	  if (@client[:name]=='admin' && @client[:password]=='654321') ||
-       (@client[:email]=='admin@email.com' && @client[:password]=='654321')  
+       (@client[:email]=='admin@email.com' && @client[:password]=='654321')
+       @client[:name] = "admin" 
+       @client[:email] = "admin@email.com" 
 	     render 'client' and return
 	     #render text: 'name - '+@client[:name]+' ,   email - '+@client[:email] and return
 	  else 
